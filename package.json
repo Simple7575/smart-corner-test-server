@@ -2,7 +2,7 @@
     "name": "smart-corner-test-server",
     "version": "1.0.0",
     "type": "module",
-    "main": "index.js",
+    "main": "./dist/index.js",
     "scripts": {
         "start": "node ./dist/index.js",
         "dev": "nodemon --exec node --loader ts-node/esm src/index.ts",

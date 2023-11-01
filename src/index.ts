@@ -12,6 +12,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({ origin: "*" }));
 
+app.get("/", async (req, res) => {
+    res.status(200).json("Welcome");
+});
+
 app.post("/save-survey", async (req, res) => {
     try {
         console.log(req.body);
